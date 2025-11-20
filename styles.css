@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010204;
+    background-image: url("https://copilot.microsoft.com/th/id/BCO.fd984e75-3a2b-4e3c-ba2d-d1732dbf1945.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 1200px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: #041b24;
+}

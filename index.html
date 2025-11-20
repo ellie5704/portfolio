@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+<!---- Navigation Bar -->
+
+    <header class="navbar">
+        <div class="mx-auto flex items-center justify-between px-8 py-6">
+            <h1 class="text-4xl font-serif text-gray-400">Eleanor Green</h1>
+
+            <nav class="hidden md:flex gap-10 text-gray-400 font-serif text-2xl md:text-2xl">
+                <a href="#home" class="hover:text-gray-600">Home</a>
+                <a href="#projects" class="hover:text-gray-600">Projects</a>
+                <a href="#skills" class="hover:text-gray-600">Skills</a>
+                <a href="#contact" class="hover:text-gray-600">Contact</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden flex-col gap-4 px-8 pb-4 text-gray-400 font-medium md:hidden">
+        <a href="#home" class="hover:text-gray-600">Home</a>
+        <a href="#projects" class="hover:text-gray-600">Projects</a>
+        <a href="#skills" class="hover:text-gray-600">Skills</a>
+        <a href="#contact" class="hover:text-gray-600">Contact</a>
+        
+    </nav>
+    </header>
+
+<!-- Introduction Section -->
+
+
+    <section id="home">
+        <div class="flex flex-col items-center justify-center min-h-screen pt-20">
+            <h2 class="text-6xl md:text-8xl font-serif text-gray-300 mb-6">Hi, I'm Eleanor.</h2>
+            <p class="text-2xl md:text-4xl font-serif text-gray-300 max-w-3xl text-center px-4">I'm a junior web developer </p>
+        </div>
+    </section>
+
+<!-- Projects  make sure all links work, add tags for html, css etc.. -->
+
+    <section id="projects" class="py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+
+            <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink mx-4 text-gray-400 font-serif text-2xl">Projects</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div><br>
+
+            <div class="flex flex-row flex-wrap gap-8 justify-center">
+
+                <!-- text adventure -->
+                
+                <div class="bg-[#001017] rounded-lg shadow-lg shadow-cyan-700 transition-transform hover:scale-105 overflow-hidden w-full md:w-100">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.d6ca66fa-a531-4147-abe0-a5db74d90843.png" alt="Text Avenuture Cat" class="w-full h-64 rounded-lg object-cover opacity-30">
+                    <div class="p-6">
+                        <h3 class="text-3xl font-serif text-gray-300 mb-4">Text Adventure Game</h3>
+                        <p class="text-gray-400 font-serif">An interactive text adventure featuring feline-inspired gameplay. It implements command parsing, room navigation, and inventory tracking within a clean, responsive layout.</p><br>
+
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">tailwind css</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">javascript</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">OOP</p><br><br>
+
+                        <a href="https://github.com/ellie5704/text-adventure" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="w-6 inline-block rounded-lg">
+                            <span>Repository</span>
+                        </a>
+
+                        <a href="https://ellie5704.github.io/text-adventure/" alt="Demo" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://copilot.microsoft.com/th/id/BCO.4e372bb0-989e-41e5-9f25-4d7077101e3d.png" alt="Link" class="w-6 inline-block rounded-lg">
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- quiz -->
+                
+                <div class="bg-[#001017] rounded-lg shadow-lg shadow-cyan-700 transition-transform hover:scale-105 overflow-hidden w-full md:w-100">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.fbf49812-8dc9-4e0a-8578-067511423b52.png" alt="Start Menu of Quiz" class="w-full h-64 rounded-lg object-cover opacity-30">
+                    <div class="p-6">
+                        <h3 class="text-3xl font-serif text-gray-300 mb-4">Retro Quiz</h3>
+                        <p class="text-gray-400 font-serif">A retro-styled quiz game designed with a nostalgic layout. It features multiple-choice questions with different outcomes based on the player's score.</p><br>
+
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300"> tailwind css</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">javascript</p><br><br>
+                        
+                        <a href="https://github.com/ellie5704/quiz" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="w-6 inline-block rounded-lg">
+                            <span>Repository</span>
+                        </a>
+
+                        <a href="https://ellie5704.github.io/quiz/" alt="Demo" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://copilot.microsoft.com/th/id/BCO.4e372bb0-989e-41e5-9f25-4d7077101e3d.png" alt="Link" class="w-6 inline-block rounded-lg">
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- hobby website -->
+                
+                <div class="bg-[#001017] rounded-lg shadow-lg shadow-cyan-700 transition-transform hover:scale-105 overflow-hidden w-full md:w-100">
+                    <img src="https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg" alt="Guitar" class="w-full h-64 rounded-lg object-cover opacity-30">
+                    <div class="p-6">
+                        <h3 class="text-3xl font-serif text-gray-300 mb-4">Hobby Website</h3>
+                        <p class="text-gray-400 font-serif">A hobby website that highlights my passion for guitars, featuring profiles of famous guitarists, information about top brands, and a personal showcase of my top five guitars.</p><br>
+
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300"> tailwind css</p><br><br>
+
+                        
+                        <a href="https://github.com/ellie5704/hobby-website" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="w-6 inline-block rounded-lg">
+                            <span>Repository</span>
+                        </a>
+
+                        <a href="https://ellie5704.github.io/hobby-website/" alt="Demo" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://copilot.microsoft.com/th/id/BCO.4e372bb0-989e-41e5-9f25-4d7077101e3d.png" alt="Link" class="w-6 inline-block rounded-lg">
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- caesar cipher -->
+
+                <div class="bg-[#001017] rounded-lg shadow-lg shadow-cyan-700 transition-transform hover:scale-105 overflow-hidden w-full md:w-100">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.fd5bc4f0-b87f-414c-bd72-9ebe53898ead.png" alt="Screenshot of the Caesar Cipher" class="w-full h-64 rounded-lg object-cover opacity-30">
+                    <div class="p-6">
+                        <h3 class="text-3xl font-serif text-gray-300 mb-4">Caesar Cipher</h3>
+                        <p class="text-gray-400 font-serif">A simple caesar cipher tool that encodes and decodes text by shifting characters through the alphabet.</p><br>
+
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300"> tailwind css</p>
+                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">javascript</p><br><br>
+                        
+                        <a href="https://github.com/ellie5704/caesar-cipher" class="text-gray-300 border p-2 rounded-lg hover:bg-cyan-700 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="w-6 inline-block rounded-lg">
+                            <span>Repository</span>
+                        </a>
+
+                        <a href="https://ellie5704.github.io/caesar-cipher/" alt="Demo" class="text-gray-300 border p-2 rounded-lg hover:bg-cyan-700 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
+                            <img src="https://copilot.microsoft.com/th/id/BCO.4e372bb0-989e-41e5-9f25-4d7077101e3d.png" alt="Link" class="w-6 inline-block rounded-lg">
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Skills -->
+
+    <section id="skills">
+        <div class="mx-auto px-8 py-16 max-w-4xl">
+
+            <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink mx-4 text-gray-400 font-serif text-2xl">Skills</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div><br>
+
+            <div class="flex flex-row justify-center gap-16">
+
+                <img src="https://cdn-icons-png.freepik.com/128/1051/1051277.png" alt="HTML Icon" class="w-25">
+                   
+                <img src="https://cdn-icons-png.freepik.com/128/732/732190.png" alt="CSS Icon" class="w-25">
+                   
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon" class="w-25">
+                   
+                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS Icon" class="w-25">
+
+                <img src="https://code.visualstudio.com/assets/updates/1_35/logo-stable.png" alt="VS Code Icon" class="w-25">
+                
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Form -->
+
+    <section id="contact">
+        <div class="mx-auto px-8 py-16 max-w-4xl font-serif">
+
+            <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink mx-4 text-gray-400 text-2xl">Contact</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div><br>
+
+
+            <form class="flex flex-col w-full bg-[url(https://copilot.microsoft.com/th/id/BCO.fd984e75-3a2b-4e3c-ba2d-d1732dbf1945.png)] p-8 rounded-lg shadow-lg">
+
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-300 text-2xl mb-2">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" class="w-full p-4 rounded-lg bg-[#030F14] text-gray-200 focus:ring-2 focus:ring-gray-400 shadow-sm shadow-cyan-700" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-300 text-2xl mb-2">Email</label>
+                    <input type="email" id="email" placeholder="e.g. name@example.com" class="w-full p-4 rounded-lg bg-[#030F14] text-gray-200 focus:ring-2 focus:ring-gray-400 shadow-sm shadow-cyan-700" required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-300 text-2xl mb-2">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your message" class="w-full p-4 rounded-lg bg-[#030F14] text-gray-200 focus:ring-2 focus:ring-gray-400 shadow-sm shadow-cyan-700" required></textarea>
+                </div>
+                
+                <button type="submit" class="bg-cyan-600 hover:bg-cyan-800 text-white text-2xl py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+
+    <footer class="bg-[#041b24] opacity-50 font-serif text-gray-300 text-center py-6 mt-16">
+        <span>Find Me On</span><br>
+        <a href="https://github.com/ellie5704" alt="My GitHub Account">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-github-icon-svg-download-png-3073768.png?f=webp" alt="GitHub" class="w-10 p-1 inline-block rounded-full mb-2">
+        </a>    
+        <a href="https://www.linkedin.com/in/eleanor-g-6b3545371/" alt="My LinkedIn Account">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" alt="LinkedIn" class="w-10 p-1 inline-block rounded-full mb-2">
+        </a>
+    </footer>
+
+
+</body>
+</html>
