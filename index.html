@@ -18,6 +18,7 @@
 
             <nav class="hidden md:flex gap-10 text-gray-400 font-serif text-2xl md:text-2xl">
                 <a href="#home" class="navsection">Home</a>
+                <a href="#about" class="navsection">About</a>
                 <a href="#projects" class="navsection">Projects</a>
                 <a href="#skills" class="navsection">Skills</a>
                 <a href="#contact" class="navsection">Contact</a>
@@ -29,10 +30,11 @@
         </div>
 
         <nav id="mobile-menu" class="hidden flex-col gap-6 px-8 pb-4 text-gray-400 font-serif md:hidden">
-        <a href="#home" class="hover:text-gray-600">Home</a>
-        <a href="#projects" class="hover:text-gray-600">Projects</a>
-        <a href="#skills" class="hover:text-gray-600">Skills</a>
-        <a href="#contact" class="hover:text-gray-600">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
         
     </nav>
     </header>
@@ -44,11 +46,28 @@
         <div class="flex flex-col items-center justify-center min-h-screen">
             <h2 class="text-6xl md:text-8xl font-serif text-gray-300">Hi, I'm Eleanor Green.</h2>
             <p class="text-2xl md:text-4xl font-serif text-gray-300 max-w-3xl text-center px-4">I'm an aspiring web developer </p>
-            <a href="#projects" class="mt-6 shadow-md shadow-cyan-700 bg-gradient-to-r from-cyan-700 to-cyan-500 hover:bg-cyan-800 text-white text-2xl py-3 px-6 rounded-lg">View My Work ↓</a>
+            <a href="#about" class="mt-6 shadow-md shadow-cyan-700 bg-gradient-to-r from-cyan-700 to-cyan-500 hover:bg-cyan-800 text-white text-2xl py-3 px-6 rounded-lg">View My Work ↓</a>
         </div>
     </section>
 
-<!-- Projects  make sure all links work, add tags for html, css etc.. -->
+<!--about me-->
+
+    <section id="about">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+
+            <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink mx-4 text-gray-400 font-serif text-2xl">About Me</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div><br>
+
+            <div class="flex text-gray-300 font-serif items-center justify-center text-xl">
+                <p>I'm Eleanor (or Ellie), a front-end designer and developer skilled in HTML, CSS, JavaScript and Tailwind. I specialise in making responsive, visually aesthetic interfaces that mix my technical expertise with creativity. My passion lies in transforming ideas into reality, where efficient code meets artistry to build websites that truly stand out.  </p>
+            </div>
+
+    </section>
+
+<!-- Projects  make sure all links work,  -->
 
     <section id="projects" class="py-16">
         <div class="max-w-6xl mx-auto px-4 md:px-8">
@@ -69,10 +88,10 @@
                         <h3 class="text-3xl font-serif text-gray-300 mb-4">Text Adventure Game</h3>
                         <p class="text-gray-400 font-serif">An interactive text adventure featuring feline-inspired gameplay. It implements command parsing, room navigation, and inventory tracking within a clean, responsive layout.</p><br>
 
-                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
-                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">tailwind css</p>
-                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">javascript</p>
-                        <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">OOP</p><br><br>
+                            <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">html</p>
+                            <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300"> tailwind css</p>
+                            <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">javascript</p>
+                            <p class="p-1 bg-gradient-to-r from-cyan-700 to-cyan-500 rounded-lg inline-flex text-gray-300">OOP</p><br><br>
 
                         <a href="https://github.com/ellie5704/text-adventure" class="text-gray-300 border p-2 rounded-lg hover:bg-gradient-to-r from-cyan-700 to-cyan-500 shadow-sm shadow-cyan-700 inline-flex items-center gap-2">
                             <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub" class="w-6 inline-block rounded-lg">
